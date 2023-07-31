@@ -34,6 +34,7 @@ async def cleansing(sentence):
             return content
         except Exception as e:
             return e
+        
 async def file_cleansing(filename):
         try:
             data = await cleanse_text(text=filename)
